@@ -12,7 +12,7 @@ while 1:
         # not done, get the command
         command = firebase_REF.get("command", None)
         # delete old response
-        firebase_REF.delete("/", "response")
+        # firebase_REF.delete("/", "response")
 
         # p = os.popen(command, 'r')
         # save new and update done=1
