@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		089C6A8D1D418D9400811554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089C6A8C1D418D9400811554 /* AppDelegate.swift */; };
-		089C6A8F1D418D9400811554 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089C6A8E1D418D9400811554 /* FirstViewController.swift */; };
-		089C6A911D418D9400811554 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089C6A901D418D9400811554 /* SecondViewController.swift */; };
 		089C6A941D418D9400811554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089C6A921D418D9400811554 /* Main.storyboard */; };
 		089C6A961D418D9400811554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089C6A951D418D9400811554 /* Assets.xcassets */; };
 		089C6A991D418D9400811554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089C6A971D418D9400811554 /* LaunchScreen.storyboard */; };
+		089C6AA11D41AC7A00811554 /* iTunesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089C6AA01D41AC7A00811554 /* iTunesViewController.swift */; };
+		089C6AA31D41AC9500811554 /* CommandLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089C6AA21D41AC9500811554 /* CommandLineViewController.swift */; };
+		089C6AA51D41ACED00811554 /* func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089C6AA41D41ACED00811554 /* func.swift */; };
+		911C19495DDB2AB0C9E40D2F /* Pods_RemoteMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6B3897929400148DF97DD5 /* Pods_RemoteMac.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		089C6A891D418D9400811554 /* RemoteMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089C6A8C1D418D9400811554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		089C6A8E1D418D9400811554 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		089C6A901D418D9400811554 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		089C6A931D418D9400811554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		089C6A951D418D9400811554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		089C6A981D418D9400811554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		089C6A9A1D418D9400811554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		089C6AA01D41AC7A00811554 /* iTunesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesViewController.swift; sourceTree = "<group>"; };
+		089C6AA21D41AC9500811554 /* CommandLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandLineViewController.swift; sourceTree = "<group>"; };
+		089C6AA41D41ACED00811554 /* func.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = func.swift; sourceTree = "<group>"; };
+		2D513DB14A4D946C03DB055A /* Pods-RemoteMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteMac/Pods-RemoteMac.debug.xcconfig"; sourceTree = "<group>"; };
+		431A7D7DE17FA16800E7F500 /* Pods-RemoteMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteMac/Pods-RemoteMac.release.xcconfig"; sourceTree = "<group>"; };
+		AB6B3897929400148DF97DD5 /* Pods_RemoteMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				911C19495DDB2AB0C9E40D2F /* Pods_RemoteMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				089C6A8B1D418D9400811554 /* RemoteMac */,
 				089C6A8A1D418D9400811554 /* Products */,
+				D5DF5AA4EF1528922B796760 /* Pods */,
+				95804F63774D40655581CA8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +66,32 @@
 			isa = PBXGroup;
 			children = (
 				089C6A8C1D418D9400811554 /* AppDelegate.swift */,
-				089C6A8E1D418D9400811554 /* FirstViewController.swift */,
-				089C6A901D418D9400811554 /* SecondViewController.swift */,
 				089C6A921D418D9400811554 /* Main.storyboard */,
 				089C6A951D418D9400811554 /* Assets.xcassets */,
 				089C6A971D418D9400811554 /* LaunchScreen.storyboard */,
 				089C6A9A1D418D9400811554 /* Info.plist */,
+				089C6AA01D41AC7A00811554 /* iTunesViewController.swift */,
+				089C6AA21D41AC9500811554 /* CommandLineViewController.swift */,
+				089C6AA41D41ACED00811554 /* func.swift */,
 			);
 			path = RemoteMac;
+			sourceTree = "<group>";
+		};
+		95804F63774D40655581CA8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB6B3897929400148DF97DD5 /* Pods_RemoteMac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5DF5AA4EF1528922B796760 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D513DB14A4D946C03DB055A /* Pods-RemoteMac.debug.xcconfig */,
+				431A7D7DE17FA16800E7F500 /* Pods-RemoteMac.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 089C6A9D1D418D9400811554 /* Build configuration list for PBXNativeTarget "RemoteMac" */;
 			buildPhases = (
+				0F2D2F97393B04F06BF8D035 /* 📦 Check Pods Manifest.lock */,
 				089C6A851D418D9400811554 /* Sources */,
 				089C6A861D418D9400811554 /* Frameworks */,
 				089C6A871D418D9400811554 /* Resources */,
+				834676058D85933C9D772AA8 /* 📦 Embed Pods Frameworks */,
+				200D23C2C243F1BACC37D28E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,14 +163,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F2D2F97393B04F06BF8D035 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		200D23C2C243F1BACC37D28E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteMac/Pods-RemoteMac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		834676058D85933C9D772AA8 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteMac/Pods-RemoteMac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		089C6A851D418D9400811554 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				089C6A911D418D9400811554 /* SecondViewController.swift in Sources */,
+				089C6AA31D41AC9500811554 /* CommandLineViewController.swift in Sources */,
+				089C6AA51D41ACED00811554 /* func.swift in Sources */,
+				089C6AA11D41AC7A00811554 /* iTunesViewController.swift in Sources */,
 				089C6A8D1D418D9400811554 /* AppDelegate.swift in Sources */,
-				089C6A8F1D418D9400811554 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +332,7 @@
 		};
 		089C6A9E1D418D9400811554 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D513DB14A4D946C03DB055A /* Pods-RemoteMac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RemoteMac/Info.plist;
@@ -264,6 +344,7 @@
 		};
 		089C6A9F1D418D9400811554 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 431A7D7DE17FA16800E7F500 /* Pods-RemoteMac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RemoteMac/Info.plist;
@@ -292,6 +373,7 @@
 				089C6A9F1D418D9400811554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
