@@ -7,10 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 
-
-let BASE_URL = "remotemac-d5039.firebaseio.com"
+//let BASE_URL = "remotemac-d5039.firebaseio.com"
 //let FIREBASE_REF = Firebase(url: BASE_URL)
 
 //var CURRENT_USER: Firebase {
@@ -18,30 +18,15 @@ let BASE_URL = "remotemac-d5039.firebaseio.com"
 //    let currentUser = Firebase(url: "\(FIREBASE_REF)").childByAppendingPath("users").childByAppendingPath(userID)
 //    return currentUser!
 //}
-/*
+
 func Alert(mes: String) -> UIAlertController {
     let alert = UIAlertController(title: "Alert", message: mes, preferredStyle: .Alert)
     let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
     alert.addAction(action)
     return alert
-}*/
-//********************************User********************************
-//func Login(email: String, password: String) -> String {
-//    var m = ""
-//    FIREBASE_REF.authUser(email, password: password) { (error, authData) in
-//        if error == nil {
-//            SetUserLogin(authData)
-//            m = "Successfully Login"
-//        } else {
-//            print(error)
-//            m = "Failed Login"
-//        }
-//    }
-//    return m
-//}
+}
 
 /*
-
 func IfUserLoggedIn() -> Bool {
     print("******Checking User Logged In:********")
     print(NSUserDefaults.standardUserDefaults().valueForKey("uid"))
