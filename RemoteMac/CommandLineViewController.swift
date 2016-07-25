@@ -10,10 +10,29 @@ import UIKit
 
 class CommandLineViewController: UIViewController {
 
+    @IBOutlet weak var text: UITextView!
+    
+    @IBOutlet weak var sendtext: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.text.text = "Loading..."
+        self.presentViewController(Alert(Login("kmfb21@gmail.com", password: "Bloom123")), animated: true, completion: nil)
+        
+        let handle = FIREBASE_REF.childByAppendingPath("response").observeEventType(.Value, withBlock: { snapshot in
+            self.text.text = ""
+            for o in snapshot.value.allObjects {
+                //self.text.text.appendContentsOf(o.valueForKey("1")! as! String + " Says: " + (o.valueForKey("2")! as! String) + "\n")
+                print(o.valueForKey("1"))
+                print(o.valueForKey("2"))
+            }
+            }, withCancelBlock: { error in
+                print(error.description)
+        })
+        //end this observe
+        //FIREBASE_REF.removeObserverWithHandle(handle)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +40,8 @@ class CommandLineViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func send(sender: AnyObject) {
+    }
 
     /*
     // MARK: - Navigation

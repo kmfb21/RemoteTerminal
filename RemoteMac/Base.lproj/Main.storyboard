@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qdb-WN-Etf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -15,12 +16,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
+                    <connections>
+                        <segue destination="qdb-WN-Etf" kind="relationship" relationship="viewControllers" id="sYv-eM-PyE"/>
+                        <segue destination="tfz-YP-zgp" kind="relationship" relationship="viewControllers" id="yg8-Fo-lwl"/>
+                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--iTunes View Controller-->
+        <!--Music-->
         <scene sceneID="ZT8-JM-J7p">
             <objects>
                 <viewController id="tfz-YP-zgp" customClass="iTunesViewController" customModule="RemoteMac" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,12 +38,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Music" image="first" id="TpU-i6-2wW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dnw-7q-gDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="0.0"/>
         </scene>
-        <!--Command Line View Controller-->
+        <!--CommandLine-->
         <scene sceneID="eT5-3n-7EM">
             <objects>
                 <viewController id="qdb-WN-Etf" customClass="CommandLineViewController" customModule="RemoteMac" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,20 +56,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oSM-7t-xpQ">
-                                <rect key="frame" x="20" y="28" width="560" height="404"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oSM-7t-xpQ">
+                                <rect key="frame" x="20" y="28" width="560" height="514"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="bofang@MyMacBook" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5w-rQ-tZY">
+                                <rect key="frame" x="20" y="550" width="506" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aAB-ot-JcL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAu-Gl-TJy">
+                                <rect key="frame" x="534" y="550" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="QPR-jn-c7t"/>
+                                    <constraint firstAttribute="height" constant="30" id="uVD-PQ-YE6"/>
+                                </constraints>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="send:" destination="qdb-WN-Etf" eventType="touchUpInside" id="iGD-Sa-awh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mAu-Gl-TJy" firstAttribute="leading" secondItem="G5w-rQ-tZY" secondAttribute="trailing" constant="8" id="Blf-jl-gAM"/>
+                            <constraint firstItem="oSM-7t-xpQ" firstAttribute="leading" secondItem="39T-hj-Gw6" secondAttribute="leadingMargin" id="DYA-nz-gCl"/>
+                            <constraint firstItem="oSM-7t-xpQ" firstAttribute="top" secondItem="CLd-hQ-Zsg" secondAttribute="bottom" constant="8" id="Dso-Ad-CRR"/>
+                            <constraint firstItem="G5w-rQ-tZY" firstAttribute="top" secondItem="oSM-7t-xpQ" secondAttribute="bottom" constant="8" id="Gop-La-Rvr"/>
+                            <constraint firstItem="mAu-Gl-TJy" firstAttribute="trailing" secondItem="39T-hj-Gw6" secondAttribute="trailingMargin" id="WJ5-00-7KS"/>
+                            <constraint firstItem="Sn4-IR-dUP" firstAttribute="top" secondItem="G5w-rQ-tZY" secondAttribute="bottom" constant="20" id="aKM-Ni-WS6"/>
+                            <constraint firstItem="oSM-7t-xpQ" firstAttribute="trailing" secondItem="39T-hj-Gw6" secondAttribute="trailingMargin" id="bW8-X7-adS"/>
+                            <constraint firstItem="G5w-rQ-tZY" firstAttribute="leading" secondItem="39T-hj-Gw6" secondAttribute="leadingMargin" id="guU-WL-tgc"/>
+                            <constraint firstItem="Sn4-IR-dUP" firstAttribute="top" secondItem="mAu-Gl-TJy" secondAttribute="bottom" constant="20" id="iyl-m9-Cyj"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="CommandLine" image="second" id="YPe-28-Kdc"/>
+                    <connections>
+                        <outlet property="sendtext" destination="G5w-rQ-tZY" id="jtm-2N-6gb"/>
+                        <outlet property="text" destination="oSM-7t-xpQ" id="adi-ST-bjU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzM-vS-DAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="648"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
 </document>
