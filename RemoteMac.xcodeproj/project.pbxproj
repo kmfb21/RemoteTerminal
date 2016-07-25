@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		086988461D45A934009D3BFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 086988451D45A934009D3BFB /* GoogleService-Info.plist */; };
 		089C6A8D1D418D9400811554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089C6A8C1D418D9400811554 /* AppDelegate.swift */; };
 		089C6A941D418D9400811554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089C6A921D418D9400811554 /* Main.storyboard */; };
 		089C6A961D418D9400811554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089C6A951D418D9400811554 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		086988451D45A934009D3BFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		089C6A891D418D9400811554 /* RemoteMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089C6A8C1D418D9400811554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		089C6A931D418D9400811554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				089C6A951D418D9400811554 /* Assets.xcassets */,
 				089C6A971D418D9400811554 /* LaunchScreen.storyboard */,
 				089C6A9A1D418D9400811554 /* Info.plist */,
+				086988451D45A934009D3BFB /* GoogleService-Info.plist */,
 				089C6AA01D41AC7A00811554 /* iTunesViewController.swift */,
 				089C6AA21D41AC9500811554 /* CommandLineViewController.swift */,
 				089C6AA41D41ACED00811554 /* func.swift */,
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				089C6A991D418D9400811554 /* LaunchScreen.storyboard in Resources */,
+				086988461D45A934009D3BFB /* GoogleService-Info.plist in Resources */,
 				089C6A961D418D9400811554 /* Assets.xcassets in Resources */,
 				089C6A941D418D9400811554 /* Main.storyboard in Resources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class CommandLineViewController: UIViewController {
 
@@ -18,9 +19,15 @@ class CommandLineViewController: UIViewController {
         super.viewDidLoad()
 
         self.text.text = "Loading..."
-        self.presentViewController(Alert(Login("kmfb21@gmail.com", password: "Bloom123")), animated: true, completion: nil)
         
-        let handle = FIREBASE_REF.childByAppendingPath("response").observeEventType(.Value, withBlock: { snapshot in
+//        FIRApp.configure()
+        FIRAuth.auth()?.signInWithEmail("kmfb21@gmail.com", password: "Bloom123", completion: { (user, error) in
+            
+        })
+        
+//        self.presentViewController(Alert(Login("kmfb21@gmail.com", password: "Bloom123")), animated: true, completion: nil)
+        
+/*        let handle = FIREBASE_REF.childByAppendingPath("response").observeEventType(.Value, withBlock: { snapshot in
             self.text.text = ""
             for o in snapshot.value.allObjects {
                 //self.text.text.appendContentsOf(o.valueForKey("1")! as! String + " Says: " + (o.valueForKey("2")! as! String) + "\n")
@@ -29,7 +36,7 @@ class CommandLineViewController: UIViewController {
             }
             }, withCancelBlock: { error in
                 print(error.description)
-        })
+        })*/
         //end this observe
         //FIREBASE_REF.removeObserverWithHandle(handle)
         
