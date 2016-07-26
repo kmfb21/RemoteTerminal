@@ -10,6 +10,8 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
+var _text: UnsafePointer<Void> = nil
+
 class CommandLineViewController: UIViewController {
 
     @IBOutlet weak var text: UITextView!
@@ -18,6 +20,8 @@ class CommandLineViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        _text = unsafeAddressOf(self.text.text)
         
         ref = FIRDatabase.database().reference()
         self.text.text = "Loading..."
@@ -32,8 +36,8 @@ class CommandLineViewController: UIViewController {
         //var s = NSAttributedString.init(string: "a", attributes: [NSForegroundColorAttributeName: UIColor.blueColor()])
         
         _ = ref.child("response").observeEventType(.Value, withBlock: { snapshot in
-            self.text.text.appendContentsOf(snapshot.value![1] as! String)
-            self.sendtext.text = snapshot.value![2] as? String
+            self.text.text.appendContentsOf((snapshot.value! as! NSArray)[1] as! String)
+            self.sendtext.text = (snapshot.value! as! NSArray)[2] as? String
 
             }, withCancelBlock: { error in
                 print(error.description)
