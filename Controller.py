@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from firebase import firebase
 # import os
 import subprocess
