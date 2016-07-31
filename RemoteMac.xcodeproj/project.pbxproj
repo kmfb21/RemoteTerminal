@@ -15,6 +15,7 @@
 		089C6AA11D41AC7A00811554 /* iTunesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089C6AA01D41AC7A00811554 /* iTunesViewController.swift */; };
 		089C6AA31D41AC9500811554 /* CommandLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089C6AA21D41AC9500811554 /* CommandLineViewController.swift */; };
 		089C6AA51D41ACED00811554 /* func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089C6AA41D41ACED00811554 /* func.swift */; };
+		08BE383E1D4EB17D00E55BF0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 08BE383D1D4EB17D00E55BF0 /* README.md */; };
 		911C19495DDB2AB0C9E40D2F /* Pods_RemoteMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6B3897929400148DF97DD5 /* Pods_RemoteMac.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		089C6AA01D41AC7A00811554 /* iTunesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesViewController.swift; sourceTree = "<group>"; };
 		089C6AA21D41AC9500811554 /* CommandLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandLineViewController.swift; sourceTree = "<group>"; };
 		089C6AA41D41ACED00811554 /* func.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = func.swift; sourceTree = "<group>"; };
+		08BE383D1D4EB17D00E55BF0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2D513DB14A4D946C03DB055A /* Pods-RemoteMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteMac/Pods-RemoteMac.debug.xcconfig"; sourceTree = "<group>"; };
 		431A7D7DE17FA16800E7F500 /* Pods-RemoteMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteMac/Pods-RemoteMac.release.xcconfig"; sourceTree = "<group>"; };
 		AB6B3897929400148DF97DD5 /* Pods_RemoteMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +51,7 @@
 		089C6A801D418D9400811554 = {
 			isa = PBXGroup;
 			children = (
+				08BE383D1D4EB17D00E55BF0 /* README.md */,
 				089C6A8B1D418D9400811554 /* RemoteMac */,
 				089C6A8A1D418D9400811554 /* Products */,
 				D5DF5AA4EF1528922B796760 /* Pods */,
@@ -223,6 +226,7 @@
 			files = (
 				089C6AA31D41AC9500811554 /* CommandLineViewController.swift in Sources */,
 				089C6AA51D41ACED00811554 /* func.swift in Sources */,
+				08BE383E1D4EB17D00E55BF0 /* README.md in Sources */,
 				089C6AA11D41AC7A00811554 /* iTunesViewController.swift in Sources */,
 				089C6A8D1D418D9400811554 /* AppDelegate.swift in Sources */,
 			);

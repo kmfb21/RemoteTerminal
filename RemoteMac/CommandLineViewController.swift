@@ -25,6 +25,7 @@ class CommandLineViewController: UIViewController {
         
         ref = FIRDatabase.database().reference()
         self.text.text = "Loading..."
+                                                            //ignore this password, has been reset =_=
         FIRAuth.auth()?.signInWithEmail("kmfb21@gmail.com", password: "Bloom123", completion: { (user, error) in
             if error != nil {
                 self.presentViewController(Alert("Connection Failed"), animated: true, completion: nil)
