@@ -4,7 +4,7 @@
 ---
 Just my practise on [Firebase](https://firebase.google.com).
 
-`bash command -> iOS -> Firebase -> Python -> OS command`
+`bash_command_UITextField -> iOS -> Firebase -> Python -> os.system(command)`
 
 
 ## Installation
